@@ -1,5 +1,8 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import React, { useState } from 'react';
+import { About, Portfolio, Contact, Resume } from "./components";
+
 
 function App() {
   return (
