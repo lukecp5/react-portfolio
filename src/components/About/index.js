@@ -11,7 +11,7 @@ function About() {
 			<div className="container">
 				<div className="row">
 					<div className="col-md-6">
-						<img src="https://i.imgur.com/QQfZKVH.jpg" alt="Me" className="img-fluid rounded-circle" />
+						<img src={require("../../assets/images/lp-avatar.jpg")} alt="Me" className="img-fluid rounded-circle" />
 					</div>
 					<div className="col-md-6">
 						<p>
