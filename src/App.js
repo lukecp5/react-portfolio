@@ -1,7 +1,15 @@
 import logo from "./logo.svg";
 import "./App.css";
 import React, { useState } from 'react';
-import { About, Portfolio, Contact, Resume } from "./components";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Portfolio from "./components/Portfolio";
+
+
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+
+library.add(fab);
 
 
 function App() {
