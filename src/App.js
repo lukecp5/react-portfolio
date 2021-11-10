@@ -23,8 +23,8 @@ function App() {
 				return <Portfolio />;
 			case "contact":
 				return <Contact />;
-			case "resume":
-				return <Resume />;
+			// case "resume":
+			// 	return <Resume />;
 			default:
 				return null;
 		}
