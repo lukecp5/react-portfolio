@@ -10,6 +10,21 @@ import Navbar from "react-bootstrap/Navbar";
 function Navigation(props) {
 	const {currentTab, setCurrentTab} = props;
 
+	return (
+		<Container fluid className="p-0">
+			<Navbar
+				bg="dark"
+				variant="dark"
+				className="p-0"
+				id="navbar-collapse-id"
+				expand="md"
+				fill
+				activeKey={currentTab}
+				justified
+			>
+			</Navbar>
+		</Container>
+	);
 }
 
 export default Navigation;
