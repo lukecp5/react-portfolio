@@ -1,36 +1,38 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import {Container, Row, Col} from "react-bootstrap";
+import Form from "react-bootstrap/Form";
 
 function Contact() {
 	return (
-		<section>
-			<div className="center" id="contact">
-				<h1>Contact</h1>
-			</div>
+		<Container>
+			<Row>
+				<div className="jumbotron jumbotron-fluid mb-0">
+					<Container>
+						<h1 className="display-4 pb-0 pb-sm-0 pb-md-0 mb-2 text-center">Contact Me</h1>
+					</Container>
+				</div>
+			</Row>
 
 			{/* Image of me and a paragraph next to the picture built in Bootstrap */}
-			<div className="container">
-				<div className="row">
-					<div className="col-md-6">
-						<img src="../../../lp-avatar.png" alt="Me" className="img-fluid rounded-circle" />
-					</div>
-					<div className="col-md-6">
-						<p>
-							Contact Me Section. Contact Me Section. Contact Me Section. Contact Me Section. Contact Me Section.
-							Contact Me Section. Contact Me Section. Contact Me Section. Contact Me Section. Contact Me Section.
-							Contact Me Section. Contact Me Section. Contact Me Section. Contact Me Section. Contact Me Section.
-							Contact Me Section. Contact Me Section.
-						</p>
-						<p>
-							Contact Me Section. Contact Me Section. Contact Me Section. Contact Me Section. Contact Me Section.
-							Contact Me Section. Contact Me Section. Contact Me Section. Contact Me Section. Contact Me Section.
-							Contact Me Section. Contact Me Section. Contact Me Section. Contact Me Section. Contact Me Section.
-							Contact Me Section. Contact Me Section.
-						</p>
-					</div>
-				</div>
-			</div>
-		</section>
+			<Row>
+				<Container>
+					<Form>
+						<Form.Group controlId="form.Name">
+							<Form.Label>Name</Form.Label>
+							<Form.Control type="text" placeholder="Enter name" />
+						</Form.Group>
+						<Form.Group controlId="form.Email">
+							<Form.Label>Email address</Form.Label>
+							<Form.Control type="email" placeholder="name@example.com" />
+						</Form.Group>
+						<Form.Group controlId="form.Textarea">
+							<Form.Label>Message</Form.Label>
+							<Form.Control as="textarea" rows={4} />
+						</Form.Group>
+					</Form>
+				</Container>
+			</Row>
+		</Container>
 	);
 }
 
