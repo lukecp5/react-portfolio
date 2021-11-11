@@ -1,25 +1,23 @@
 import React from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Container, Row, Col } from "react-bootstrap";
+import { SocialIcon } from 'react-social-icons';
+import "./footer.css";
 
 function Footer() {
 	return (
-		<footer className="footer">
-			<div>
-				<a href="https://github.com/lukecp5" target="_blank" rel="noopener noreferrer">
-					<FontAwesomeIcon icon="stack-overflow" />
-				</a>
-			</div>
-			<div>
-				<a href="https://www.linkedin.com/in/luke-poirrier/" target="_blank" rel="noopener noreferrer">
-					<img src={require("../../assets/logos/linkedin-logo.png")} alt="LinkedIn" className="logo"></img>
-				</a>
-			</div>
-			<div>
-				<a href="https://stackoverflow.com/users/16159639/luke-poirrier" target="_blank" rel="noopener noreferrer">
-					<img src={require("../../assets/logos/twitter-logo.png")} alt="Twitter" className="logo"></img>
-				</a>
-			</div>
-		</footer>
+		<Container className="footer text-center my-auto py-auto">
+			<Row id="social-icons">
+				<Col>
+				<SocialIcon url="https://github.com/lukecp5" target="_blank" rel="noopener noreferrer" />
+				</Col>
+			<Col>
+				<SocialIcon url="https://www.linkedin.com/in/luke-poirrier/" target="_blank" rel="noopener noreferrer" />
+			</Col>
+			<Col>
+				<SocialIcon url="https://stackoverflow.com/users/16159639/luke-poirrier" target="_blank"rel="noopener noreferrer" />
+			</Col>
+			</Row>
+		</Container>
 	);
 }
 
