@@ -43,3 +43,42 @@ const skillTypes = [
 		]
 	},
 ];
+
+	function Resume() {
+		return (
+			<Container>
+				<Row>
+					<Col>
+					<div className="jumbotron jumbotron-fluid">
+						<Container>
+							<h1 className="display-4 text-center">Resume</h1>
+						</Container>
+					</div>
+					</Col>
+				</Row>
+				<Row>
+					<Col>
+						<Accordion>
+							{skillTypes.map((skillCategory, evtKey) => {
+								return(
+								<Accordion.Item eventKey={evtKey}>
+									<AccordionHeader>{skillCategory.name}</AccordionHeader>
+									<Accordion.Body>
+									<ListGroup>
+										{skillCategory.skills.map((skill) => {
+											return (
+											<ListGroup.Item>{skill}</ListGroup.Item>
+											);
+										})}
+									</ListGroup>
+									</Accordion.Body>
+								</Accordion.Item>)
+							})}
+						</Accordion>
+					</Col>
+				</Row>
+			</Container>
+		);
+	}
+
+export default Resume;
