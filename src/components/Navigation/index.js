@@ -26,6 +26,23 @@ function Navigation(props) {
 					<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 
 					<Navbar.Collapse id="responsive-navbar-nav">
+						<Nav activeKey={currentTab} onSelect={setCurrentTab}>
+							<Nav.Item>
+								<Nav.Link onClick={() => setCurrentTab("about")} eventKey="about">
+									About
+								</Nav.Link>
+							</Nav.Item>
+							<Nav.Item>
+								<Nav.Link onClick={() => setCurrentTab("portfolio")} eventKey="portfolio">
+									Portfolio
+								</Nav.Link>
+							</Nav.Item>
+							<Nav.Item>
+								<Nav.Link onClick={() => setCurrentTab("contact")} eventKey="contact">
+									Contact
+								</Nav.Link>
+							</Nav.Item>
+						</Nav>
 					</Navbar.Collapse>
 				</Container>
 			</Navbar>
