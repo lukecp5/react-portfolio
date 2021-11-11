@@ -12,12 +12,12 @@ function Navigation(props) {
 
 	return (
 		<Container fluid className="p-0">
-			<Navbar collapseOnSelect bg="dark" variant="dark" className="px-2 p-sm-0" id="navbar-collapse-id" expand="md" fill activeKey={currentTab} justified>
+			<Navbar collapseOnSelect bg="dark" variant="dark" className="px-2 p-sm-0" id="navbar-collapse-id" expand="lg" fill activekey={currentTab} justified>
 				<Container>
-					<Navbar.Toggle aria-controls="responsive-navbar-nav" />
+					<Navbar.Toggle aria-controls="responsive-navbar-nav px-3 px-sm-1 px-md-0" />
 
 					<Navbar.Collapse id="responsive-navbar-nav">
-						<Nav activeKey={currentTab} onSelect={setCurrentTab}>
+						<Nav activeKey={currentTab} onSelect={setCurrentTab} className="px-3 px-sm-1 px-md-0">
 							<Nav.Item>
 								<Nav.Link onClick={() => setCurrentTab("about")} eventKey="about">
 									About
