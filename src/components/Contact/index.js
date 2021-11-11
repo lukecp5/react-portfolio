@@ -1,4 +1,5 @@
 import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
 
 function Contact() {
 	return (
@@ -11,7 +12,7 @@ function Contact() {
 			<div className="container">
 				<div className="row">
 					<div className="col-md-6">
-						<img src={require("../../assets/images/lp-avatar.jpg")} alt="Me" className="img-fluid rounded-circle" />
+						<img src="../../../lp-avatar.png" alt="Me" className="img-fluid rounded-circle" />
 					</div>
 					<div className="col-md-6">
 						<p>
