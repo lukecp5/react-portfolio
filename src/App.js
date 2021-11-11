@@ -36,16 +36,17 @@ function App() {
 	};
 
 	return (
-		<div className="App">
-			<header className="App-header">
-				<img src={logo} className="App-logo" alt="logo" />
-				<p>
-					Edit <code>src/App.js</code> and save to reload.
-				</p>
-				<a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-					Learn React
-				</a>
-			</header>
+		<div>
+			<Container fluid className="p-0">
+				<Header currentTab={currentTab} setCurrentTab={setCurrentTab} className="p-0 m-0"></Header>
+				<FontAwesomeIcon className="app-logo" icon="connectdevelop" />
+			</Container>
+			<Container fluid>
+				<main>{renderTab()}</main>
+			</Container>
+			<Container fluid>
+				<Footer />
+			</Container>
 		</div>
 	);
 }
