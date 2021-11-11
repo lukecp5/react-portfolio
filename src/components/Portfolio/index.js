@@ -22,7 +22,7 @@ function Portfolio() {
 					{portfolioProjects.filter((item, idx) => idx < 3).map((project, index) => {
 						return (
 							<Col key={index} md={4}>
-							<Project project={project} key={index} />
+							<Project project={project} key={index}/>
 							</Col>
 						)
 					})}
