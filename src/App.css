@@ -2,14 +2,46 @@
   text-align: center;
 }
 
+.header{
+  padding: 0rem !important;
+}
+
+div div header{
+  padding: 0rem !important;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
 
+
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+html {
+  font-size: 1rem;
+}
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 1.2rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 1.4rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 1.6rem;
   }
 }
 
