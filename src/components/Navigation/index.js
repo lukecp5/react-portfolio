@@ -12,7 +12,7 @@ function Navigation(props) {
 
 	return (
 		<Container fluid className="p-0">
-			<Navbar bg="dark" variant="dark" className="p-0" id="navbar-collapse-id" expand="md" fill activeKey={currentTab} justified>
+			<Navbar collapseOnSelect bg="dark" variant="dark" className="px-2 p-sm-0" id="navbar-collapse-id" expand="md" fill activeKey={currentTab} justified>
 				<Container>
 					<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 
