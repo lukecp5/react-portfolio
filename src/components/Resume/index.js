@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Accordion, ListGroup } from "react-bootstrap";
+import { Container, Row, Col, Accordion, ListGroup, Button } from "react-bootstrap";
 import AccordionHeader from "react-bootstrap/esm/AccordionHeader";
 
 /*//----------------------------------------------------------------------------+
@@ -9,6 +9,8 @@ import AccordionHeader from "react-bootstrap/esm/AccordionHeader";
 // _ Git npm Jest Webpack
 // - Database Proficiencies
 // _ MySQL, Sequelize, NoSQL, SQLite, GraphQL, MongoDB, Mongoose */
+
+
 const skillTypes = [
 	{
 		name: "Frontend Development",
@@ -54,6 +56,11 @@ const skillTypes = [
 							<h1 className="display-4 text-center">Resume</h1>
 						</Container>
 					</div>
+					</Col>
+				</Row>
+				<Row>
+					<Col className="text-center mb-3">
+						<Button href="https://lukecp5.github.io/update-portfolio/assets/luke-poirrier-dev-resume.pdf">Download My Resume</Button>
 					</Col>
 				</Row>
 				<Row>
