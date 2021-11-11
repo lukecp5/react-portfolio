@@ -49,7 +49,7 @@ function Contact() {
 			setError('Message is required');
 			return;
 		}
-		const msg = `Thank you for your message, ${name}! I will get back to you as soon as possible.`;
+		const msg = 'Thank you for your message, ' + name + '! I will get back to you as soon as possible.';
 		setWelcomeMessage(msg);
 
 		// If everything goes according to plan, we want to clear out the input after a successful registration.
