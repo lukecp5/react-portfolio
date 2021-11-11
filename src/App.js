@@ -4,16 +4,15 @@ import Contact from "./components/Contact";
 import Portfolio from "./components/Portfolio";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import {Container, Row, Col} from "react-bootstrap";
+import Resume from "./components/Resume";
+import { Container } from "react-bootstrap";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import {library} from "@fortawesome/fontawesome-svg-core";
-import {fab} from "@fortawesome/free-brands-svg-icons";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./App.css";
-
-
 
 library.add(fab);
 
@@ -28,8 +27,8 @@ function App() {
 				return <Portfolio />;
 			case "contact":
 				return <Contact />;
-			// case "resume":
-			// 	return <Resume />;
+			case "resume":
+				return <Resume />;
 			default:
 				return null;
 		}
@@ -39,7 +38,6 @@ function App() {
 		<div>
 			<Container fluid className="p-0">
 				<Header currentTab={currentTab} setCurrentTab={setCurrentTab} className="p-0 m-0"></Header>
-				<FontAwesomeIcon className="app-logo" icon="connectdevelop" />
 			</Container>
 			<Container fluid>
 				<main>{renderTab()}</main>
