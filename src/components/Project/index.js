@@ -7,13 +7,13 @@ const Project = (props) => {
       return (
                   <Card key={props.key}>
                         <Card.Img variant="top" src={project.image} alt={project.name} className="img-fluid rounded-circle"/>
-                        <Card.Body>
+                        <Card.Body className="mx-auto">
                               <Card.Title>{project.name}</Card.Title>
                               {/* <Card.Text>
                                     {project.description}
                               </Card.Text> */}
                         </Card.Body>
-                        <Card.Footer>
+                        <Card.Footer className="mx-auto">
                               <Button variant="primary" href={project.live}>Live Demo</Button>
                               <Button variant="secondary" href={project.github}>GitHub Repo</Button>
                         </Card.Footer>
