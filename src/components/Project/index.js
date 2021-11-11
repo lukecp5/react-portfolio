@@ -13,7 +13,7 @@ const Project = (props) => {
                                     {project.description}
                               </Card.Text> */}
                         </Card.Body>
-                        <Card.Footer className="mx-auto">
+                        <Card.Footer className="m-auto">
                               <Button variant="primary" href={project.live}>Live Demo</Button>
                               <Button variant="secondary" href={project.github}>GitHub Repo</Button>
                         </Card.Footer>
