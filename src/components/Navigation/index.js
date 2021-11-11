@@ -22,6 +22,12 @@ function Navigation(props) {
 				activeKey={currentTab}
 				justified
 			>
+				<Container>
+					<Navbar.Toggle aria-controls="responsive-navbar-nav" />
+
+					<Navbar.Collapse id="responsive-navbar-nav">
+					</Navbar.Collapse>
+				</Container>
 			</Navbar>
 		</Container>
 	);
